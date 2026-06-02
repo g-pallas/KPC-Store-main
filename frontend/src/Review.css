@@ -1,0 +1,350 @@
+.nav-links a.active {
+  color: #777;
+}
+
+.write-review-card {
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 24px;
+  display: grid;
+  grid-template-columns: 1fr 330px;
+  gap: 36px;
+  align-items: start;
+  min-height: 620px;
+}
+
+.write-review-product,
+.write-review-side {
+  display: grid;
+  gap: 16px;
+  align-content: start;
+}
+
+.write-review-item {
+  display: grid;
+  grid-template-columns: 58px 1fr;
+  gap: 14px;
+  align-items: center;
+}
+
+.write-review-item img {
+  width: 58px;
+  height: 58px;
+  object-fit: contain;
+}
+
+.write-review-item span,
+.write-review-side p {
+  display: grid;
+  gap: 4px;
+  margin: 0;
+}
+
+.write-review-item small {
+  color: #777;
+}
+
+.star-picker {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.star-picker button {
+  border: 0;
+  background: transparent;
+  color: #d7d7d7;
+  font-size: 38px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+}
+
+.star-picker button.active {
+  color: #f8c02d;
+}
+
+.star-picker span {
+  margin-left: 8px;
+  font-size: 14px;
+}
+
+.star-picker.small button {
+  font-size: 32px;
+}
+
+.upload-photo-box {
+  width: 74px;
+  height: 74px;
+  border: 1px dashed #cfcfcf;
+  background: #fff;
+  color: #aaa;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.seller-mood {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.seller-mood button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  background: #fff;
+  color: #999;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.seller-mood button.active {
+  background: #f8c02d;
+  color: #111;
+  border-color: #f8c02d;
+}
+
+.anonymous-toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-transform: none;
+  font-weight: 500;
+  margin-top: 42px;
+}
+
+.anonymous-toggle input {
+  width: 48px;
+  height: 26px;
+  accent-color: #3ca653;
+}
+
+.submit-review-button {
+  border: 0;
+  background: #111;
+  color: #fff;
+  min-height: 50px;
+  text-transform: uppercase;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.order-detail-card {
+  background: #fff;
+  border: 1px solid #eee;
+  display: grid;
+  gap: 12px;
+  padding: 14px;
+}
+
+.order-detail-store {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 12px;
+}
+
+.order-detail-store span {
+  background: #f1f3f6;
+  border-radius: 999px;
+  padding: 7px 18px;
+  text-transform: capitalize;
+}
+
+.order-info-strip {
+  background: #eef4ff;
+  color: #111;
+  margin: 0;
+  padding: 10px 12px;
+}
+
+.delivery-track {
+  background: #f6f6f6;
+  border-radius: 4px;
+  display: grid;
+  grid-template-columns: auto auto 1fr auto;
+  gap: 12px;
+  align-items: center;
+  padding: 12px 14px;
+}
+
+.delivery-track button,
+.order-detail-meta button {
+  border: 0;
+  background: #111;
+  color: #fff;
+  padding: 9px 22px;
+  cursor: pointer;
+}
+
+.delivery-track small {
+  grid-column: 1 / -1;
+  color: #555;
+}
+
+.order-detail-item {
+  display: grid;
+  grid-template-columns: 84px minmax(260px, 1fr) 120px 90px 130px;
+  gap: 16px;
+  align-items: start;
+  padding: 14px 18px;
+}
+
+.order-detail-item img {
+  width: 78px;
+  height: 78px;
+  object-fit: contain;
+}
+
+.order-detail-item span {
+  display: grid;
+  gap: 5px;
+}
+
+.order-detail-item em,
+.order-detail-bottom em {
+  width: fit-content;
+  border: 1px solid #111;
+  border-radius: 4px;
+  color: #111;
+  font-style: normal;
+  font-size: 12px;
+  padding: 2px 6px;
+}
+
+.order-detail-item a {
+  color: #111;
+  text-align: right;
+}
+
+.order-detail-meta {
+  border-top: 12px solid #eef0f5;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 4px 20px;
+  padding: 14px 0 0;
+}
+
+.order-detail-meta button {
+  grid-column: 2;
+  grid-row: 1 / span 4;
+  align-self: center;
+  min-width: 150px;
+}
+
+.order-detail-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.total-summary {
+  display: grid;
+  gap: 8px;
+}
+
+.total-summary p {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.account-section-button {
+  border: 0;
+  background: transparent;
+  color: #111 !important;
+  cursor: pointer;
+  display: block;
+  font-size: 18px;
+  font-weight: 800;
+  margin-top: 10px;
+  padding: 0 !important;
+  text-align: left;
+}
+
+.account-section-button.active {
+  color: #111;
+}
+
+.my-profile-card {
+  min-height: 560px;
+  display: grid;
+  gap: 72px;
+  align-content: start;
+}
+
+.profile-fields {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 66px 70px;
+}
+
+.profile-fields article {
+  display: grid;
+  gap: 14px;
+  align-content: start;
+}
+
+.profile-fields span {
+  color: #333;
+  font-size: 13px;
+}
+
+.profile-fields span button {
+  border: 0;
+  background: transparent;
+  color: #111;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 0 0 0 4px;
+}
+
+.profile-fields label {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  text-transform: none;
+  font-weight: 500;
+}
+
+.profile-actions {
+  width: min(290px, 100%);
+  display: grid;
+  gap: 18px;
+}
+
+.profile-actions button {
+  min-height: 48px;
+  border: 0;
+  background: #111;
+  color: #fff;
+  font-weight: 800;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .write-review-card {
+    grid-template-columns: 1fr;
+  }
+
+  .delivery-track,
+  .order-detail-item,
+  .order-detail-meta,
+  .order-detail-bottom {
+    grid-template-columns: 1fr;
+  }
+
+  .order-detail-meta button {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .profile-fields {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
