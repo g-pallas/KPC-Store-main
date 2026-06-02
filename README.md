@@ -219,6 +219,6 @@ Then redeploy the Render API.
 ## Deployment Notes
 
 - `frontend/vercel.json` makes browser refreshes work on React routes like `/products`, `/cart`, and `/account/orders`.
-- The Render entrypoint runs migrations automatically on deploy.
+- The Render entrypoint runs migrations and seed data automatically on deploy.
 - Uploaded admin images use Render's service filesystem. For long-term production use, move uploads to S3, Cloudinary, or another persistent file storage service.
 - The checkout records payment details for admin review, but it does not process real payments.
